@@ -1,0 +1,89 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #023047;
+    margin-bottom: 40px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; 
+}
+
+.players-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.board{
+    position: relative;
+    background-color: #ffffff;
+    min-width: 400px;
+    padding-top: 400px;
+    border-radius: 6px;
+}
+.squares{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .5rem;
+    border-radius: 6px;
+}
+.square{
+    position: relative;
+    background-color: #ffb703;
+    border-radius: 4px;
+    font-size: 90px;
+    text-align: center;
+    line-height: 110px;
+    color: #ffffff;
+
+}
+.square:hover{
+    cursor: pointer;
+    background-color: #fb8500;
+}
+
+button {
+      background-color: #ffb703;
+      border-radius: 6px;
+      border-style: none;
+      color: #000;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: baseline;
+      user-select: none;
+    }
+    
+    .button:hover {
+      background-color: #fb8500;
+    }
+
+.text {
+    margin: 10px;
+    font-weight: 700;
+}
